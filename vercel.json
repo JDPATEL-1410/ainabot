@@ -12,19 +12,5 @@
             "source": "/(.*)",
             "destination": "/frontend/build/$1"
         }
-    ],
-    "builds": [
-        {
-            "src": "backend_node/index.js",
-            "use": "@vercel/node"
-        },
-        {
-            "src": "frontend/package.json",
-            "use": "@vercel/static-build",
-            "config": {
-                "distDir": "build",
-                "installCommand": "npm install --legacy-peer-deps"
-            }
-        }
     ]
 }
