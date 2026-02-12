@@ -1,0 +1,145 @@
+{
+  "identity": {
+    "name": "YourApp",
+    "persona": "The Obsidian Command Center",
+    "vibe": "Professional, High-Density, Precision, Dark-Mode First",
+    "emotional_tone": "Control, Reliability, Speed"
+  },
+  "typography": {
+    "headings": {
+      "family": "Outfit, sans-serif",
+      "weights": ["500", "600", "700"],
+      "usage": "All headings (h1-h6), Sidebar Section Titles, Modal Titles",
+      "letter_spacing": "tracking-tight"
+    },
+    "body": {
+      "family": "Inter, sans-serif",
+      "weights": ["400", "500"],
+      "usage": "Paragraphs, Input fields, Table data, Chat messages",
+      "letter_spacing": "normal"
+    },
+    "mono": {
+      "family": "JetBrains Mono, monospace",
+      "usage": "API Keys, ID tags, Code snippets"
+    },
+    "installation": "Add <link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&family=Outfit:wght@500;600;700&display=swap' rel='stylesheet'> to index.html"
+  },
+  "colors": {
+    "theme_mode": "dark",
+    "palette": {
+      "background": {
+        "default": "#09090b",
+        "paper": "#121215",
+        "subtle": "#18181b"
+      },
+      "foreground": {
+        "default": "#fafafa",
+        "muted": "#a1a1aa",
+        "subtle": "#52525b"
+      },
+      "primary": {
+        "default": "#10b981",
+        "hover": "#059669",
+        "foreground": "#ffffff",
+        "faint": "rgba(16, 185, 129, 0.1)"
+      },
+      "border": {
+        "default": "#27272a",
+        "active": "#3f3f46"
+      },
+      "status": {
+        "success": "#10b981",
+        "warning": "#f59e0b",
+        "error": "#ef4444",
+        "info": "#3b82f6"
+      }
+    },
+    "tailwind_extension": {
+      "colors": {
+        "obsidian": "#050505",
+        "charcoal": "#0F0F11",
+        "glass": "rgba(15, 15, 17, 0.7)"
+      }
+    }
+  },
+  "layout_strategies": {
+    "general": {
+      "page_wrapper": "min-h-screen bg-background text-foreground flex flex-col font-sans",
+      "container": "container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl",
+      "section_spacing": "py-12 md:py-20 lg:py-24"
+    },
+    "dashboard": {
+      "grid": "grid grid-cols-1 md:grid-cols-4 lg:grid-cols-12 gap-6",
+      "widgets": {
+        "summary": "col-span-1 md:col-span-2 lg:col-span-3 h-full",
+        "main_chart": "col-span-1 md:col-span-4 lg:col-span-8 row-span-2 h-full",
+        "list_feed": "col-span-1 md:col-span-4 lg:col-span-4 h-full"
+      }
+    },
+    "inbox": {
+      "wrapper": "flex h-[calc(100vh-4rem)] overflow-hidden border-t border-border",
+      "sidebar": "w-80 border-r border-border flex flex-col bg-background/50",
+      "chat_area": "flex-1 flex flex-col bg-background relative",
+      "info_panel": "w-72 border-l border-border bg-background/50 hidden xl:flex flex-col"
+    }
+  },
+  "components": {
+    "global_styles": {
+      "radius": "0.3rem",
+      "border_width": "1px",
+      "button_style": "font-medium tracking-wide transition-all active:scale-95"
+    },
+    "shadcn_customization": {
+      "card": "bg-card border-border shadow-[0_0_0_1px_rgba(255,255,255,0.03),0_1px_2px_rgba(0,0,0,0.2)] rounded-lg",
+      "button": "rounded-md shadow-none",
+      "input": "bg-input/10 border-input focus:border-primary focus:ring-1 focus:ring-primary/20 transition-all",
+      "dialog": "bg-[#09090b] border-border shadow-2xl backdrop-blur-xl",
+      "dropdown": "bg-[#09090b] border-border"
+    },
+    "custom_components": {
+      "stat_card": {
+        "structure": "p-6 rounded-lg border border-border bg-card/50 hover:bg-card/80 transition-colors",
+        "typography": "Label: text-sm text-muted-foreground | Value: text-3xl font-bold font-outfit tracking-tight"
+      },
+      "chat_bubble": {
+        "incoming": "bg-secondary text-secondary-foreground rounded-2xl rounded-tl-sm px-4 py-2 max-w-[70%]",
+        "outgoing": "bg-primary text-primary-foreground rounded-2xl rounded-tr-sm px-4 py-2 max-w-[70%] ml-auto"
+      }
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": {
+      "usage": "Sticky Headers, Floating Actions, Modals",
+      "classes": "bg-background/80 backdrop-blur-md border-b border-white/5"
+    },
+    "gradients": {
+      "subtle_glow": "bg-gradient-to-tr from-primary/10 via-transparent to-transparent",
+      "text_highlight": "bg-clip-text text-transparent bg-gradient-to-r from-white to-white/60"
+    },
+    "animation": {
+      "hover_lift": "hover:-translate-y-1 transition-transform duration-200 ease-out",
+      "fade_in": "animate-in fade-in duration-500",
+      "slide_up": "animate-in slide-in-from-bottom-4 duration-500"
+    }
+  },
+  "assets": {
+    "icons": {
+      "library": "lucide-react",
+      "style": "stroke-width={1.5} className='w-5 h-5'"
+    },
+    "images": {
+      "login_bg": "https://images.unsplash.com/photo-1645574613625-d85401ab7e75?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "dashboard_empty_state": "https://images.unsplash.com/photo-1566121822676-ce12612f5600?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "team_placeholder": "https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "logo_placeholder": "https://via.placeholder.com/150/10b981/ffffff?text=YourApp"
+    }
+  },
+  "universal_guidelines": [
+    "Do NOT use gradients for backgrounds, keep it flat and clean dark.",
+    "Ensure all text has sufficient contrast (APCA standards).",
+    "Use 'Outfit' font for all headings to maintain brand identity.",
+    "Inbox must be full-width and fill remaining screen height.",
+    "Use Shadcn 'Sonner' for all toast notifications.",
+    "Add 'data-testid' to all interactive elements."
+  ]
+}
