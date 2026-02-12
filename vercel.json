@@ -22,15 +22,5 @@
                 "distDir": "build"
             }
         }
-    ],
-    "routes": [
-        {
-            "src": "/api/(.*)",
-            "dest": "/backend_node/index.js"
-        },
-        {
-            "src": "/(.*)",
-            "dest": "/frontend/build/$1"
-        }
     ]
 }
